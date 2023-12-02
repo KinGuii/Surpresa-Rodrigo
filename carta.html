@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira Página Especial</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .back-btn-container {
+            margin-top: 20px;
+        }
+
+        .back-btn,
+        .third-page-btn,
+        .reveal-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .back-btn {
+            background-color: #3498db;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .third-page-btn {
+            background-color: #27ae60;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .third-page-btn:hover {
+            background-color: #219a52;
+        }
+
+        .reveal-btn {
+            background-color: #e74c3c;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .reveal-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        /* Decoração de carta abrindo */
+        .letter-opening {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Elemento oculto */
+        .hidden-surprise {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="letter-opening">💌</div>
+        <h1>🎁 Surpresa Especial! 🎉</h1>
+        <h2>Dois Anos de Amizade merecem uma celebração!</h2>
+        <p>Quero compartilhar contigo esta surpresa especial como forma de agradecimento por todos os momentos incríveis
+            que passamos juntos nos últimos dois anos.</p>
+
+        <!-- Conteúdo Interativo (Substitua pelo seu conteúdo real) -->
+        <p>Hoje celebramos dois anos de uma amizade que é verdadeiramente única. Recordar todas as aventuras que
+            compartilhamos aquece meu coração e me faz perceber o quão especial você é para mim.</p>
+        <p>Nossas conversas, mesmo quando estamos longe, são como um bálsamo para minha alma. A sinceridade e a conexão
+            que compartilhamos são de deixar sem palavras. Mesmo quando discordamos e brigamos, nos formamos uma dupla
+            incrível, como fogo e água fervente, mas mesmo assim encontra um equilíbrio um no outro.</p>
+        <p>A tua existência na minha vida é um presente daqueles que a gente nem sabia que precisava. Cara, não dá pra
+            pedir por um alguém igual tu, eu não consigo nem me imaginar sem você. A gente tem passado por altos e
+            baixos, superando perrengues, comemorando conquistas e construindo lembranças que vão grudar no meu coração
+            para sempre. Essa vibe que a gente tem é coisa de louco, afinal nos somos mesmo! Cada momento contigo é tipo
+            uma mistura de tudo na minha história. Valeu por ser o melhor, parceiro de aventuras no carro, companheiro
+            de áudios na rua, e por fazer a minha vida mais completa. Te amo demais!</p>
+        <p>Estou ansioso por muitos mais anos de risadas, aventuras e amizade verdadeira. Obrigado por ser a incrível
+            pessoa que você é.</p>
+
+        <!-- Botão para Voltar à Página Inicial -->
+        <div class="back-btn-container">
+            <a href="index.html" class="back-btn">Voltar ao Cartão</a>
+            <button onclick="revealSurprise()" class="reveal-btn">Revelar Dica</button>
+        </div>
+
+        <!-- Elemento Oculto -->
+        <div class="hidden-surprise">
+            <h2>🎉 Dica para a Terceira Página! 🕵️‍♂️</h2>
+            <p>Para encontrar a surpresa especial, siga a dica: "Onde nossas memórias dançam como flocos de neve..."</p>
+            <a href="surpresa.html" class="third-page-btn">Ir para a Terceira Página</a>
+        </div>
+    </div>
+
+    <p class="footer">Desenvolvido com ❤️ por Guilherme</p>
+
+    <script>
+        function revealSurprise() {
+            // Função para revelar o elemento oculto
+            document.querySelector('.hidden-surprise').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
